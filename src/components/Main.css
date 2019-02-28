@@ -1,0 +1,37 @@
+.main {
+    height: 100vh;
+    overflow: scroll;
+    width: 100vw;
+}
+
+code {
+    webkit-transition: font-size .25s;
+       -moz-transition: font-size .25s;
+         -o-transition: font-size .25s;
+            transition: font-size .25s;
+}
+code:hover {
+    font-size: 1.15em;
+}
+
+
+button {
+    webkit-transition: font-weight 3s;
+       -moz-transition: font-weight 3s;
+         -o-transition: font-weight 3s;
+            transition: font-weight 3s;
+}
+
+button:active {
+    animation: 2.5s shake infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: skewX(-25deg); }
+    5% { transform: skewX(25deg); }
+    10% { transform: skewX(-25deg); }
+    15% { transform: skewX(25deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }  
+  }
+  
