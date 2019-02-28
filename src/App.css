@@ -1,5 +1,29 @@
+@font-face {
+  font-famiy: comicneue;
+  src: url('./assets/fonts/ComicNeue-Regular.otf') format('opentype');
+}
+
+body {
+  font-family: comicneue;
+}
+/* @font-face {
+  font-famiy: "Comic Neue";
+  font-weight: light;
+  src: url("/assets/fonts/ComicNeue_Light.otf") format("opentype");
+}
+
+@font-face {
+  font-famiy: "Comic Neue";
+  font-weight: bold;
+  src: url("/assets/fonts/ComicNeue_Bold.otf") format("opentype");
+} */
+
 .App {
+  /* border: 1px green solid; */
   text-align: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {
@@ -31,3 +55,26 @@
     transform: rotate(360deg);
   }
 }
+
+.sidebar {
+  border: 1px #F3C5C8 solid;
+  border-radius: 0 .28571429rem .28571429rem 0px;
+  width: 400px; 
+  /* width: 25%; */
+  background-image:  url(http://kaomoji.ru/images/bg_sakura.png) !important;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.main {
+  /* border: 1px blue solid; */
+  width: 75%;
+}
+
