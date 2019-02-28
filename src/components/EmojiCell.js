@@ -6,7 +6,7 @@ const EmojiCell = ({emojiText}) => {
         <div className="emoji-cell">
             <pre>
                 <code>
-                    <button className="kaomi" data-clipboard-text={emojiText}>{emojiText}</button>
+                    <button className="kaomoji" data-clipboard-text={emojiText}>{emojiText}</button>
                 </code>
             </pre>
         </div>

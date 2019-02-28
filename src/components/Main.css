@@ -15,14 +15,14 @@ code:hover {
 }
 
 
-button {
+.kaomoji {
     webkit-transition: font-weight 3s;
        -moz-transition: font-weight 3s;
          -o-transition: font-weight 3s;
             transition: font-weight 3s;
 }
 
-button:active {
+.kaomoji:active {
     animation: 2.5s shake infinite alternate;
 }
 
