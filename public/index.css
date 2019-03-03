@@ -1,0 +1,4 @@
+@font-face {
+    font-famiy: comicneue;
+    src: local('comicneue'), url(./ComicNeue-Regular.otf) format("opentype");
+  }
