@@ -1,10 +1,10 @@
 @font-face {
   font-famiy: comicneue;
-  src: url('./assets/fonts/ComicNeue-Regular.otf') format('opentype');
+  src: local('comicneue'), url(./assets/fonts/ComicNeue-Regular.otf) format("opentype");
 }
 
-body {
-  font-family: comicneue;
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 /* @font-face {
   font-famiy: "Comic Neue";
