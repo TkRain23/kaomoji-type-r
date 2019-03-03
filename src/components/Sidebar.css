@@ -28,3 +28,9 @@
   .ui.twitter.button:nth-last-child(1){
     width: 308px !important;
   }
+
+  .sidebar Button {
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    text-transform: capitalize !important;
+
+  }
