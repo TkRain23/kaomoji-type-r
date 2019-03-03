@@ -3,10 +3,17 @@ import CategoryButton from './CategoryButton'
 import { Button } from 'semantic-ui-react'
 import Logo from '../assets/images/logo.png'
 import './Sidebar.css';
+import KaomojiDB from  '../assets/kaomoji.js'
 
-const categories = ['Positive', 'Negative', 'Neutral', 'Various', 'Animals', 'Other']
+const categories = []
 
-const SidebarContainer = () => (
+for (let key in KaomojiDB) {
+    // console.log(key)
+    categories.push(key)
+}
+
+const SidebarContainer = ({ setCategory }) => (
+
     <div class="sidebar">
         
         <div class = "branding">
@@ -16,10 +23,10 @@ const SidebarContainer = () => (
         <div class = "categories">
             {
                 categories.map((cat) => {
-                return <Button color="twitter">{cat}</Button>
+                return <Button color="twitter" onClick={(e)=> setCategory(cat)}>{cat}</Button>
                 })
             }
-            <Button class="allbtn" color="twitter">All</Button>
+            <Button class="allbtn" color="twitter" onClick={(e)=> setCategory('all')}>all</Button>
         </div>
     </div>
 )
