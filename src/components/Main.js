@@ -1,13 +1,12 @@
 import React from 'react'
 import EmojiList from './EmojiList'
-import kaomoji from 'node-kaomoji'
+import KaomojiDB from  '../assets/kaomoji.js'
 import './Main.css'
 
-const SidebarContainer = () => (
+const MainContainer = (props) => (
     <div class="main">
-        <h2>-insert title-</h2>
-        <EmojiList emojiCategory={kaomoji.angry} />
+        <EmojiList selectedCategory={props.cat} emojiCategory={Object.keys(KaomojiDB[props.cat])} />
     </div>
 )
 
-export default SidebarContainer 
+export default MainContainer  
