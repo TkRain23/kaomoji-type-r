@@ -6,7 +6,6 @@
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
     "clipboard": "^2.0.4",
-    "node-kaomoji": "^0.1.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
